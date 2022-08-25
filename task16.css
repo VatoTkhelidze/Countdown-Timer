@@ -58,6 +58,7 @@ body{
 .little_round_first{
     position: absolute;
     background: black;
+    opacity: 0.50;
     border-radius: 50%;
     width: 6.5px;
     height: 6.5px;
@@ -67,6 +68,7 @@ body{
 .little_round_last{
     position: absolute;
     background: black;
+    opacity: 0.50;
     border-radius: 50%;
     width: 6.5px;
     height: 6.5px;
