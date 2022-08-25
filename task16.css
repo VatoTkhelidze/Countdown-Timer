@@ -32,3 +32,36 @@ body{
     justify-content: center;
     margin-top: 142px;
 }
+
+.date_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 54px;
+    width: 100%;
+}
+
+.date_rectangle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 70px;
+    border-radius: 4px 4px 0 0;
+    background: red;
+}
+
+.date_rectangle_bot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 70px;
+    background: green;
+    border-radius: 0 0 4px 4px;
+    align-self: flex-end;
+    justify-self: end;
+    flex-direction: column;
+}
