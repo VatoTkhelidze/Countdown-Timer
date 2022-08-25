@@ -8,7 +8,6 @@
 }
 
 body{
-    min-height: 100vh;
     background: #1D1E28;
     background-image: url(./bg-stars.svg);
 }
@@ -47,21 +46,113 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 33px;
+    height: 66.2px;
     width: 70px;
-    border-radius: 4px 4px 0 0;
-    background: red;
+    border-radius: 4px 4px 4px 4px;
+    background: #343650;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.20);;
+    position: relative;
+    overflow: hidden;
 }
 
-.date_rectangle_bot{
+.little_round_first{
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    width: 6.5px;
+    height: 6.5px;
+    left: -3.25px;
+    top: 29.8px;
+}
+.little_round_last{
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    width: 6.5px;
+    height: 6.5px;
+    left: 67px;
+    top: 29.8px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds{
+    position: absolute;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 71px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1.08px;
+    color: #FB5E84;
+}
+
+.line{
+    position: absolute;
+    height: 1px;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    width: 100%;
+}
+
+.footer_img{
+    position: absolute;
+    border-radius: 0px;
+    height: 25%;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer_image{
+    width: 100%;
+    overflow: hidden;
+}
+
+.social_media{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 33px;
-    width: 70px;
-    background: green;
-    border-radius: 0 0 4px 4px;
-    align-self: flex-end;
-    justify-self: end;
-    flex-direction: column;
+    margin-top: 259px;
+    position: absolute;
+    width: 100%;
+    gap: 32px;
+}
+
+.days_text,
+.hours_text,
+.minutes_text,
+.seconds_text{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7px;
+    line-height: 9px;
+    text-align: center;
+    letter-spacing: 2.95937px;
+    color: #8385A9;
+}
+.days_text{
+    margin-left: 10px;
+}
+
+.hours_text{
+    margin-left: 24px;
+}
+
+.minutes_text{
+    margin-left: 10px;
+}
+
+.date_text {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5px;
 }
