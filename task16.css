@@ -8,6 +8,7 @@
 }
 
 body{
+    min-height: 100vh;
     background: #1D1E28;
     background-image: url(./bg-stars.svg);
 }
@@ -55,6 +56,13 @@ body{
     overflow: hidden;
 }
 
+.date_rectangle_span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .little_round_first{
     position: absolute;
     background: #191A23;
@@ -100,28 +108,9 @@ body{
     width: 100%;
 }
 
-.footer_img{
-    position: absolute;
-    border-radius: 0px;
-    height: 25%;
-    width: 100%;
-    bottom: 0;
-}
 
-.footer_image{
-    width: 100%;
-    overflow: hidden;
-}
 
-.social_media{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 259px;
-    position: absolute;
-    width: 100%;
-    gap: 32px;
-}
+
 
 .days_text,
 .hours_text,
@@ -135,27 +124,46 @@ body{
     text-align: center;
     letter-spacing: 2.95937px;
     color: #8385A9;
-}
-.days_text{
-    margin-left: 10px;
+    margin-top: 9px;
 }
 
-.hours_text{
-    margin-left: 24px;
-}
-
-.minutes_text{
-    margin-left: 10px;
-}
-
-.date_text {
+.footer_image{
+    position: absolute;
     display: flex;
-    width: 100%;
-    height: 20px;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    margin-top: 5px;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    bottom: -142px;
 }
+
+.footer_img{
+    width: 971px;
+    height: 168px;
+    position: relative;
+    left: -220px;
+}
+
+.social_media{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.pintereset{
+    margin-left: 32px;
+}
+
+.instagram{
+    margin-left: 32px;
+}
+
+
+
 
 
 
@@ -243,7 +251,7 @@ body{
     .hours_text,
     .minutes_text,
     .seconds_text{
-        margin: 0;
+        margin-top: 16px;
         font-family: 'Red Hat Text';
         font-style: normal;
         font-weight: 700;
@@ -253,30 +261,46 @@ body{
         letter-spacing: 5.91875px;
         color: #8385A9;
     }
-    .days_text{
-        margin-left: 50px;
+   
+    .date_rectangle_span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .hours_text{
-        margin-left: 110px;
-    }
 
-    .minutes_text{
-        margin-left: 80px;
-    }
-
-    .seconds_text{
-        margin-left: 70px;
+    .footer_image{
+        bottom: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     .footer_img{
-        height: 265px;
-        width: 1440px;
+        width: 100%;
     }
 
     .social_media{
-        margin-top: 570px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
     }
-    
+
+    .pintereset{
+        margin-left: 32px;
+    }
+
+    .instagram{
+        margin-left: 32px;
+    }
+
+
+
+
 
 }
